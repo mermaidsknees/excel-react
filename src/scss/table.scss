@@ -1,0 +1,102 @@
+// Grid Set-up
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.09fr 1.6fr;
+  grid-template-rows: $row-height 1.9fr;
+  //using $row-height fixes scaling issues with column titles when adding rows
+  gap: 0px 0px;
+  grid-template-areas:
+    "empty-square column-names"
+    "row cells";
+}
+.column-names {
+  grid-area: column-names;
+  display: flex;
+  max-height: $row-height;
+}
+.cells {
+  grid-area: cells;
+  display: flex;
+}
+.row {
+  grid-area: row;
+}
+
+.empty-square {
+  grid-area: empty-square;
+  background-color: #d3d3d3 !important;
+  max-height: $row-height;
+}
+
+.home-input-label {
+  margin-top: 20px;
+}
+.home-select {
+  width: 100%;
+}
+
+input {
+  margin: 0;
+  padding: 0;
+  z-index: 3;
+  outline: 0;
+
+  &:focus {
+    margin: 0;
+    padding: 0;
+    z-index: 3;
+    outline: 0;
+  }
+}
+
+//Spreadsheet styles
+.table {
+  .cell {
+    padding: 5px;
+    width: $cell-width;
+    height: $row-height;
+    max-width: $cell-width;
+    border: 1px solid #e2e3e3;
+    border-top: 0;
+    // border-left: 0;
+    color: #111;
+    overflow: hidden !important;
+    white-space: nowrap;
+    outline: none;
+    z-index: 1;
+
+    &.selected {
+      border: 2px solid #3c74ff;
+      // outline: 2px solid #3c74ff;
+      z-index: 2 !important;
+    }
+
+    &.error {
+      border: 2px solid red;
+      background-color: #ff817b;
+    }
+  }
+
+  .column-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: $cell-width;
+    min-height: $row-height;
+    border: 1px solid $border-color;
+    background: #f8f9fa;
+    border-top: none;
+  }
+
+  .row-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: $info-cell-width;
+    min-height: $row-height;
+    border-top: 1px solid $border-color;
+    border: 1px solid $border-color;
+    background: #f8f9fa;
+    border-top: none;
+  }
+}

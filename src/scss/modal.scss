@@ -1,0 +1,27 @@
+// Dropdown options selection styles  
+
+.add-dropdown-option {
+    position: relative;
+    .add-dropdown-button {
+      position: absolute;
+      margin-left: 10px;
+      bottom: 0;
+    }
+  }
+  
+  .display-dropdown-items{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .display-dropdown-item{
+    border-radius: 5px;
+    padding:0px 10px;
+    background-color: #C4C9B9;
+    margin: 10px;
+    font-size: 14px;
+    color:white;
+  }
+  
+  

@@ -1,0 +1,34 @@
+//Buttons
+.new-col-button {
+  height: $button-height;
+  width: $button-width;
+  border-radius: 50%;
+  background-color: #3f51b5;
+  color: white;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 10px $info-cell-width/2;
+  //to center it 
+
+  &:hover {
+    background-color: #002984;
+  }
+}
+
+.new-row-button {
+  height: $button-height;
+  width: $button-width;
+  border-radius: 50%;
+  background-color: gray;
+  color: white;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  margin: 20px $info-cell-width;
+
+  &:hover {
+    background-color: darkgray;
+  }
+}

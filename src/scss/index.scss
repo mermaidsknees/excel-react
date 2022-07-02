@@ -1,0 +1,25 @@
+@import "variables";
+
+//Component Styles
+//All styles could be stored in index.scss but this gives structures
+//There are also alternative ways to add CSS like CSS Modules or Styled Components
+@import './homepage.scss';
+@import './table.scss';
+@import './buttons.scss';
+@import './modal.scss';
+
+//Roboto font
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size:12px;
+}
+
+

@@ -1,0 +1,26 @@
+//Homepage styles
+.homepage {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+  
+    .welcome {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  
+      button {
+        text-align: center;
+        padding: 5px;
+        margin-top: 10px;
+      }
+    }
+  }
+  
+  
+  
