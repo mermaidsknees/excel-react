@@ -1,7 +1,5 @@
 
-# GovPredict Take-Home Test
-
-Moment of captain obvious here. This project was made using React, and some features of Redux.
+# React Excel
 
 Additional libraries used: 
 * Material UI
